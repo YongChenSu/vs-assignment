@@ -1,0 +1,11 @@
+{
+  "extends": ["airbnb", "plugin:prettier/recommended"],
+  "rules": {
+    "import/no-import-module-exports": [
+      "error",
+      {
+        "exceptions": ["**/*/preview.jsx"]
+      }
+    ]
+  }
+}
