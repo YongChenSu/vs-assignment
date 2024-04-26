@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-const taskOne = () => {
-  return (
-	<div>task-1</div>
-  )
+function TaskOne() {
+  return <div>task-1</div>;
 }
 
-export default taskOne
+export default TaskOne;
