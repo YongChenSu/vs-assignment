@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import { Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
 import { Routes, Route, BrowserRouter, Link } from 'react-router-dom';
 import envConst from '../environment';
@@ -9,6 +9,7 @@ function Preview() {
     {
       path: 'ViewSonic-Assignments-Task-1',
       component: ViewSonicAssignments.TaskOne,
+      id: 'ViewSonic-Assignments-Task-1',
     },
   ];
   return (
@@ -19,7 +20,7 @@ function Preview() {
             <Route
               exact
               path={`/${router.path}`}
-              element={<router.component {...router.props} />}
+              element={<router.component />}
               key={router.path}
             />
           ))}
@@ -27,10 +28,10 @@ function Preview() {
             path="/"
             element={
               <div>
-                {componentsRouter.map((router, index) => {
+                {componentsRouter.map(({ path, id }) => {
                   return (
-                    <div key={index}>
-                      <Link to={`/${router.path}`}>{router.path}</Link>
+                    <div key={id}>
+                      <Link to={`/${path}`}>{path}</Link>
                     </div>
                   );
                 })}
