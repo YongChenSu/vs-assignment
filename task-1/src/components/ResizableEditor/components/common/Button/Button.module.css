@@ -1,0 +1,7 @@
+.button {
+  color: black;
+  width: 80px;
+  height: 30px;
+  margin-left: 4px;
+  cursor: pointer;
+}
