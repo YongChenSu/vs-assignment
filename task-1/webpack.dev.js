@@ -23,13 +23,7 @@ module.exports = {
     host: envConst.HOST,
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx'],
-    // alias: {
-    //     '@components': path.resolve(__dirname, 'src/components'),
-    //     '@utils': path.resolve(__dirname, 'src/utils'),
-    //     '@service': path.resolve(__dirname, 'src/service'),
-    //     '@languages': path.resolve(__dirname, 'src/languages'),
-    // },
+    extensions: ['.js', '.jsx'],
   },
   module: {
     rules: [
