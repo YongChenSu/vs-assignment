@@ -1,3 +1,3 @@
-import TaskOne from './components/task-1';
+import ResizableEditor from './components/ResizableEditor';
 
-export { TaskOne };
+export { ResizableEditor };

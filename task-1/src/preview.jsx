@@ -7,9 +7,9 @@ import * as ViewSonicAssignments from './index';
 function Preview() {
   const componentsRouter = [
     {
-      path: 'ViewSonic-Assignments-Task-1',
-      component: ViewSonicAssignments.TaskOne,
-      id: 'ViewSonic-Assignments-Task-1',
+      path: 'ViewSonic-Assignments-Task-1-ResizableEditor',
+      component: ViewSonicAssignments.ResizableEditor,
+      id: 'ViewSonic-Assignments-Task-1-ResizableEditor',
     },
   ];
   return (
