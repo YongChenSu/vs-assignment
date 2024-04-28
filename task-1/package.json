@@ -4,9 +4,7 @@
 	"description": "assignments from view-sonic",
 	"main": "./dist/view-sonic-assignments.js",
 	"scripts": {
-		"start": "webpack --mode=development",
 		"build": "webpack --node-env=production --mode=production",
-		"build-dev": "webpack --watch --config webpack.build-dev.js",
 		"dev": "webpack serve --open --config webpack.dev.js"
 	},
 	"keywords": [],
