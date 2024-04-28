@@ -20,6 +20,10 @@
         "exceptions": ["**/*/preview.jsx"]
       }
     ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["**/webpack.*.js", "**/*.config.js"] }
+    ],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-uses-react": "off",
