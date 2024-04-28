@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Button Click Timer</title>
+</head>
+<body>
+    <button id="startButton">start</button>
+    <button id="endButton">end</button>
+    <p id="result"></p>
+
+    <script>
+        let startTime;
+        let timer;
+        const startButton = document.getElementById('startButton');
+        const endButton = document.getElementById('endButton');
+        const result = document.getElementById('result');
+
+        const updateElapsedTime = () => {
+            const currentTime = new Date();
+            const timeDiff = (currentTime - startTime) / 1000;
+            result.textContent = `Time elapsed: ${timeDiff.toFixed(2)} seconds`;
+        };
+
+        const handleStartRecordTime = () => {
+            if (!timer) {
+                startTime = new Date();
+                timer = setInterval(updateElapsedTime, 100);
+            }
+        };
+
+        const handleStopRecordTime = () => {
+            if (timer) {
+                clearInterval(timer);
+                timer = null;
+                updateElapsedTime();
+            } else {
+                result.textContent = 'Please click the start button first.';
+            }
+        };
+
+        startButton.addEventListener('click', handleStartRecordTime);
+        endButton.addEventListener('click', handleStopRecordTime);
+    </script>
+</body>
+</html>
