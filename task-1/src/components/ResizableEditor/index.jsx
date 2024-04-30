@@ -23,7 +23,7 @@ function ResizableEditor() {
       <TextArea className={style.textArea} isEditable={isEditable} />
       <div className={style.buttonsContainer}>
         <Button
-          text={isEditable ? 'edit' : 'read only'}
+          text={isEditable ? 'read only' : 'edit'}
           onClick={handleEditTextArea}
         />
         <Button text="resize" onClick={handleToggleEditorSize} />
