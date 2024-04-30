@@ -1,6 +1,6 @@
 {
 	"name": "view-sonic-assignments-resizable-editor",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "assignments from view-sonic",
 	"main": "./dist/view-sonic-assignments.js",
   "license": "MIT",
