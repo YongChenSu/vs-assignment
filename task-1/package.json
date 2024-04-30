@@ -1,15 +1,15 @@
 {
-	"name": "view-sonic-assignments",
+	"name": "@yong945/view-sonic-assignments",
 	"version": "1.0.0",
 	"description": "assignments from view-sonic",
 	"main": "./dist/view-sonic-assignments.js",
+  "license": "MIT",
 	"scripts": {
 		"build": "webpack --node-env=production --mode=production",
 		"dev": "webpack serve --open --config webpack.dev.js"
 	},
-	"keywords": [],
-	"author": "",
-	"license": "MIT",
+	"files": ["dist"],
+	"author": "Harry Su",
 	"dependencies": {
 		"@babel/plugin-transform-runtime": "^7.22.6",
 		"classnames": "^2.5.1",
