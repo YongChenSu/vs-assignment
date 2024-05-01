@@ -1,5 +1,6 @@
+## task-3 的 3 個問題的回答如下：
+ps. 以下內容與 [task-3-answer.txt](./task-3-answer.txt) 一致。
 
-## 三個問題的回答如下：
 **1. Simply describe what "function1" will do.**
 function1 是一個 Redux-Saga 中使用的 `generator function`，用於管理 Redux 中的副作用。此函數處理一個非同步 POST 請求，並使用 AbortController 來取消該請求。
 

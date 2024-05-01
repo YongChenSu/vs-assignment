@@ -1,3 +1,18 @@
+# ViewSonic Assignment 的三個題目的回答
+| Assignment | Folder |  README 答題說明 |
+| ---------- | ------ | --------------- |
+| task-1     | [task-1](./task-1/) | [task-1 答題說明](./task-1/README.md) |
+| task-2     | [task-2](./task-2/) | [task-2 答題說明](./task-2/README.md) |
+| task-3     | [task-3](./task-3/) | [task-3 答題說明](./task-3/README.md) |
+
+
+**BONUS**
+| Folder |  README 說明 |
+| ------ | --------------- |
+| [resizable-editor-install](./resizable-editor-install/) | [將 task-1 作為 npm 並安裝](./resizable-editor-install/README.md) |
+
+---
+# ViewSonic 題目如下
 ## Please complete the following tasks as much as you can.
 
 -   Do the following three tasks as much as you can.
