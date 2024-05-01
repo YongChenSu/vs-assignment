@@ -10,9 +10,6 @@ module.exports = api => {
         { development: !api.env('production'), runtime: 'automatic' },
       ],
     ],
-    // Applies the react-refresh Babel plugin on non-production modes only
-    // ...(!api.env('production') && { plugins: ['react-refresh/babel'] }),
-
     // Allow Babel to automatically determine CommonJS or ES Modules
     sourceType: 'unambiguous',
   };
